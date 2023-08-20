@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "e-Commerce Toko Ibu Popon",
+    "imgPath": "./assets/images/portofolio/porto11.jpg"
+  },
+  {
+    "id": 2, 
+    "title": "Web Learning Networking Computer",
+    "imgPath": "./assets/images/portofolio/porto10.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Zenit Breedner",
+    "imgPath": "./assets/images/portofolio/porto9.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Zenit Website",
+    "imgPath": "./assets/images/portofolio/porto8.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Zenit Ticket Mobile",
+    "imgPath": "./assets/images/portofolio/porto7.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Velops Mobile",
+    "imgPath": "./assets/images/portofolio/porto6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Phinnisi Web Control",
+    "imgPath": "./assets/images/portofolio/porto5.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Phinnisi TabV1",
+    "imgPath": "./assets/images/portofolio/porto4.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Phinnisi TabV2",
+    "imgPath": "./assets/images/portofolio/porto3.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Phinnisi Mobile",
+    "imgPath": "./assets/images/portofolio/porto2.jpg"
+  },
+  {
+    "id": 11,
+    "title": "CrystalSea Indonesian",
+    "imgPath": "./assets/images/portofolio/porto1.jpg"
+  }
+]

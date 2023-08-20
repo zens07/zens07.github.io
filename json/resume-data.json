@@ -1,0 +1,36 @@
+{
+  "Education":[
+    {
+      "year": "SMKN 1 Majalengka 2010-2013",
+      "title": "Senior High School",
+      "subtitle": "Software engineering(Rekayasa Perangkat Lunak)",
+      "iconClass": "fa-solid fa-school"
+    },
+    {
+      "year": "University of Majalengka 2015-2020",
+      "title": "Bachelor degree",
+      "subtitle": "Informatics Engineering(Teknik Informatika)",
+      "iconClass": "fa-solid fa-user-graduate"
+    }
+  ],
+  "Work Experience":[
+    {
+      "year": "PT. Danamon Mei 2020 - Mei 2021",
+      "title": "Software Developer",
+      "subtitle": "<ul><li>Created application to simplify work in the transaction banking division</li><li>QA Manual Testing on project Danamon Cash Connect</li><li>Work in teams and communicate with other teams</li><li>Able to complete the targeted job at one day</li></ul>",
+      "iconClass": "fa-solid fa-briefcase"
+    },
+    {
+      "year": "PT. ILCS Jun 2021 - Sep 2022",
+      "title": "Software Engineer",
+      "subtitle": "I am a Mobile Developer at PT Integrasi logistic Cipta Solusi since Juni 2021 until September 2022. when I joined PT ILCS I created Mobile Apps for running job nahkoda when a ship is in port, Applications using React & React Native, and I maintenance Frontend and Backend for Monitor berthing activities at the port, appilcation used express JS and Next Js",
+      "iconClass": "fa-solid fa-briefcase"
+    },
+    {
+      "year": "PT. CIMB Niaga since Oct 2022",
+      "title": "Frontend Developer",
+      "subtitle": "I am a Frontend at PT CIMB Niaga since Oct 2022 until now. when I joined PT CIMB Niaga I created Web Apps for branch of niaga for running job nahkoda when a ship is in port, Applications using React & React Native , and I maintenance Frontend and Backend for Monitor berthing activities at the port, appilcation used express JS and Next Js",
+      "iconClass": "fa-solid fa-briefcase"
+    }
+  ]
+}

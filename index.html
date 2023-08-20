@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng==">
     <link rel="stylesheet" href="style.css" />
     <title>Muhammad Nur Zaeni</title>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar">
       <div class="navbar-logo">Zens</div>
       <div class="navbar-toggle" id="navbarToggle">
@@ -20,7 +19,7 @@
         <ul>
           <li><a href="#myprofile">My Profile</a></li>
           <li><a href="#myproject">My Project</a></li>
-          <li><a href="#educationskills">Education and Skills</a></li>
+          <li><a href="#certificateskills">Certificate and Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -33,10 +32,18 @@
       <h2>Muhammad Nur Zaeni</h2>
       <h4>Frontend Developer</h4>
       <div class="social-media-bar">
-        <a href="https://www.facebook.com/your-profile" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/your-profile" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/your-profile" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/your-profile" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
       </div>
     </div>
 
@@ -66,53 +73,12 @@
         </div>
       </div>
     </div>
-
-    <section class="project-list">
-      <h2>Projects</h2>
-      <div class="project">
-          <h3>Project Title 1</h3>
-          <img src="https://via.placeholder.com/300x200" alt="Project 1" class="project-image">
-          <p>Description of Project 1.</p>
-          <a href="#">View Project</a>
-      </div>
-      <div class="project">
-          <h3>Project Title 2</h3>
-          <img src="https://via.placeholder.com/300x200" alt="Project 2" class="project-image">
-          <p>Description of Project 2.</p>
-          <a href="#">View Project</a>
-      </div>
-      <!-- Add more projects as needed -->
-  </section>
-
-    <div id="educationskills">
-      <div class="education-container">
-        <h2>Education</h2>
-        <div class="education-item">
-          <div class="image">
-            <img src="./assets/images/stm-logo.png" alt="SMKNegri1Majalengka" />
-          </div>
-          <div class="description">
-            <h3>Software Engineering</h3>
-            <p>Vocational HighSchool 1 MAJALENGKA</p>
-            <p>Completed in 2013</p>
-            <button>Visit</button>
-          </div>
-        </div>
-        <div class="education-item">
-          <div class="image">
-            <img
-              src="./assets/images/unma-logo.png"
-              alt="UniversitasMajalengka"
-            />
-          </div>
-          <div class="description">
-            <h3>Technical Information</h3>
-            <p>University of Majalengka</p>
-            <p>Graduated in 2020</p>
-            <button>Visit</button>
-          </div>
-        </div>
-        <div class="education-item">
+    <div class="project-container" id="myproject"></div>
+    <div class="timeline-container"></div>
+    <div id="certificateskills">
+      <div class="certificate-container">
+        <h2>Certificate</h2>
+        <div class="certificate-item">
           <div class="image">
             <img src="./assets/images/dumbways-logo.png" alt="Dumbways" />
           </div>
@@ -124,68 +90,13 @@
           </div>
         </div>
       </div>
-  
       <div class="skills-container">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>
-            <span class="skill-name">HTML</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 80%"></div>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">CSS</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 75%"></div>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">Javascript</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 75%"></div>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">Node Js</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 60%"></div>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">React Js</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 90%"></div>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">Redux</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 80%"></div>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">React Native</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 70%"></div>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">PHP</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 50%"></div>
-            </div>
-          </li>
-          <li>
-            <span class="skill-name">Laravel</span>
-            <div class="skill-progress">
-              <div class="skill-progress-bar" style="width: 50%"></div>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
-    <script src="https://kit.fontawesome.com/db997aee9a.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/db997aee9a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

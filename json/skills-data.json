@@ -1,0 +1,11 @@
+[
+  { "name": "HTML", "progress": 80 },
+  { "name": "CSS", "progress": 75 },
+  { "name": "Javascript", "progress": 75 },
+  { "name": "Node Js", "progress": 60 },
+  { "name": "React Js", "progress": 90 },
+  { "name": "Redux", "progress": 80 },
+  { "name": "React Native", "progress": 70 },
+  { "name": "PHP", "progress": 50 },
+  { "name": "Laravel", "progress": 50 }
+]
