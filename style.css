@@ -318,8 +318,8 @@ h4 {
   }
 }
 
-/* training */
-.training-container {
+/* certificate */
+.certificate-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -331,7 +331,7 @@ h4 {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.training-item {
+.certificate-item {
   display: flex;
   padding: 20px;
   width: 300px;
@@ -340,51 +340,67 @@ h4 {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.training-item .description {
+.certificate-item .certificate-document {
+  object-fit: cover;
+  position: absolute;
+  width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1); 
+  transition: opacity 0.3s, transform 0.3s;
+  border-radius: 5px;
+  z-index: 1;
+}
+.certificate-item:hover .certificate-document {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.certificate-item .description {
   margin-top: 0px;
 }
 
-.training-item .image {
-  width: 80px;
+.certificate-item img.certificate-logo {
   margin-right: 20px;
-}
-
-.training-item img {
-  max-width: 100%;
+  width: 80px;
   height: auto;
 }
 
-.training-item h3 {
+.certificate-item h3 {
   color: #333;
   margin: 0;
   font-size: 20px;
 }
-.training-container h2 {
+.certificate-container h2 {
   width: 100%;
   color: floralwhite;
 }
 
-.training-item p {
+.certificate-item p {
   color: #666;
   margin: 0;
   font-size: 16px;
 }
 
-.training-item button {
-  display: inline-block;
-  width: 150px;
-  background-color: #333;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.training-item button:hover {
-  background-color: #555;
+@media (max-width:768px) {
+  .certificate-container {
+    padding: 10px;
+  }
+  .certificate-container .certificate-item {
+    width: 100%;
+  }
+  .description:last-child::after {
+    content: 'Click card for see certificate';
+    color: #444;
+    font-weight: bold;
+    font-size: 10px;
+  }
 }
 
 /* Skills */
@@ -506,4 +522,59 @@ h4 {
 }
 .timeline-item:last-child .timeline-connector:first-child {
   bottom: 90%;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-bottom:1px solid whitesmoke;
+}
+
+.contact-container h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e; /* Change to your preferred hover color */
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #007bff; /* Change to your preferred hover color */
 }

@@ -95,13 +95,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const timelineContainer = document.querySelector(".timeline-container");
 
       Object.keys(data).forEach((key) => {
-        const titleContent = document.createElement('h1');
+        const titleContent = document.createElement("h1");
         titleContent.textContent = key;
-        titleContent.classList.add('title-content')
+        titleContent.classList.add("title-content");
 
         const groupItem = document.createElement("div");
         groupItem.classList.add("group-item");
-        groupItem.appendChild(titleContent)
+        groupItem.appendChild(titleContent);
 
         data[key].reverse().forEach((item) => {
           const timelineItem = document.createElement("div");
@@ -125,4 +125,54 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     })
     .catch((error) => console.error("Error fetching data:", error));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("json/certificate-data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const certificateContainer = document.querySelector(
+        ".certificate-container"
+      );
+
+      data.forEach((certificate) => {
+        const certificateItem = document.createElement("div");
+        certificateItem.classList.add("certificate-item");
+
+        const certificateImg = document.createElement("img");
+        certificateImg.src = certificate.imagePaths.certificate;
+        certificateImg.alt = certificate.certificateType;
+        certificateImg.classList.add("certificate-document");
+        
+        const logoImg = document.createElement("img");
+        logoImg.src = certificate.imagePaths.logo;
+        logoImg.alt = certificate.institution;
+        logoImg.classList.add("certificate-logo");
+
+        const descriptionDiv = document.createElement("div");
+        descriptionDiv.classList.add("description");
+
+        const certificateTitle = document.createElement("h3");
+        certificateTitle.textContent = certificate.certificateType;
+
+        const institutionName = document.createElement("p");
+        institutionName.textContent = certificate.institution;
+
+        const completionYear = document.createElement("p");
+        completionYear.textContent = `Completed in ${certificate.completionYear}`;
+
+        descriptionDiv.appendChild(certificateTitle);
+        descriptionDiv.appendChild(institutionName);
+        descriptionDiv.appendChild(completionYear);
+
+        certificateItem.appendChild(certificateImg);
+        certificateItem.appendChild(logoImg);
+        certificateItem.appendChild(descriptionDiv);
+
+        certificateContainer.appendChild(certificateItem);
+      });
+    })
+    .catch((error) => {
+      console.error("Error fetching or populating data:", error);
+    });
 });

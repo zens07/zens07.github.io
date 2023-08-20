@@ -1,0 +1,57 @@
+[
+    {
+        "certificateType": "Technical Information",
+        "institution": "University of Majalengka",
+        "completionYear": "2020",
+        "imagePaths": {
+            "certificate": "./assets/images/certificate/IjazahS1.jpg",
+            "logo": "./assets/images/unma-logo.png"
+        }
+    },
+    {
+      "certificateType": "Software Engineering",
+      "institution": "Vocational HighSchool 1 MAJALENGKA",
+      "completionYear": "2013",
+      "imagePaths": {
+        "certificate": "./assets/images/certificate/IjazahSMK.jpg",
+        "logo": "./assets/images/stm-logo.png"
+      }
+    },
+    {
+      "certificateType": "FullStack MERN",
+      "institution": "PT. DumbWays Bootcamp",
+      "completionYear": "2020",
+      "imagePaths": {
+        "certificate": "./assets/images/certificate/bootcamp.jpg",
+        "logo": "./assets/images/dumbways-logo.png"
+      }
+    },
+    {
+      "certificateType": "SNST",
+      "institution": "University Wahid Hasim Semarang",
+      "completionYear": "2019",
+      "imagePaths": {
+        "certificate": "./assets/images/certificate/pemakalahpengolahanlimbah.jpg",
+        "logo": "./assets/images/Unwahas.png"
+      }
+    },
+    {
+      "certificateType": "SNST",
+      "institution": "University Wahid Hasim Semarang",
+      "completionYear": "2019",
+      "imagePaths": {
+        "certificate": "./assets/images/certificate/pemakalahRemoteControl.jpg",
+        "logo": "./assets/images/Unwahas.png"
+      }
+    },
+    {
+      "certificateType": "BNSP",
+      "institution": "Badan Nasional Sertifikat Profesi",
+      "completionYear": "2019",
+      "imagePaths": {
+        "certificate": "./assets/images/certificate/BNSPsofwaredev.jpg",
+        "logo": "./assets/images/bnsp-logo.png"
+      }
+    }
+  ]
+  
