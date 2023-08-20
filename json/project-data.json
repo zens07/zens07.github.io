@@ -2,56 +2,91 @@
   {
     "id": 1,
     "title": "e-Commerce Toko Ibu Popon",
-    "imgPath": "./assets/images/portofolio/porto11.jpg"
+    "imgPath": "./assets/images/portofolio/porto11.jpg",
+    "linkProject": "https://github.com/zens07/e-commerce"
   },
   {
     "id": 2, 
     "title": "Web Learning Networking Computer",
-    "imgPath": "./assets/images/portofolio/porto10.jpg"
+    "imgPath": "./assets/images/portofolio/porto10.jpg",
+    "linkProject": "https://github.com/zens07/LearnTopologi"
   },
   {
     "id": 3,
     "title": "Zenit Breedner",
-    "imgPath": "./assets/images/portofolio/porto9.jpg"
+    "imgPath": "./assets/images/portofolio/porto9.jpg",
+    "linkProject": "https://github.com/zens07/Breender"
   },
   {
     "id": 4,
-    "title": "Zenit Website",
-    "imgPath": "./assets/images/portofolio/porto8.jpg"
+    "title": "Zenit Ticket Website",
+    "imgPath": "./assets/images/portofolio/porto8.jpg",
+    "linkProject": "https://github.com/zens07/TrainTicketWeb"
   },
   {
     "id": 5,
     "title": "Zenit Ticket Mobile",
-    "imgPath": "./assets/images/portofolio/porto7.jpg"
+    "imgPath": "./assets/images/portofolio/porto7.jpg",
+    "linkProject": "https://github.com/zens07/ZenitTicketMobile"
   },
   {
     "id": 6,
     "title": "Velops Mobile",
-    "imgPath": "./assets/images/portofolio/porto6.jpg"
+    "imgPath": "./assets/images/portofolio/porto6.jpg",
+    "linkProject": "https://github.com/zens07"
   },
   {
     "id": 7,
     "title": "Phinnisi Web Control",
-    "imgPath": "./assets/images/portofolio/porto5.jpg"
+    "imgPath": "./assets/images/portofolio/porto5.jpg",
+    "linkProject": "https://github.com/zens07"
   },
   {
     "id": 8,
     "title": "Phinnisi TabV1",
-    "imgPath": "./assets/images/portofolio/porto4.jpg"
+    "imgPath": "./assets/images/portofolio/porto4.jpg",
+    "linkProject": "https://github.com/zens07"
   },
   {
     "id": 9,
     "title": "Phinnisi TabV2",
-    "imgPath": "./assets/images/portofolio/porto3.jpg"
+    "imgPath": "./assets/images/portofolio/porto3.jpg",
+    "linkProject": "https://play.google.com/store/apps/details?id=com.ilcs.phinnisitab"
   },
   {
     "id": 10,
     "title": "Phinnisi Mobile",
-    "imgPath": "./assets/images/portofolio/porto2.jpg"
+    "imgPath": "./assets/images/portofolio/porto2.jpg",
+    "linkProject": "https://play.google.com/store/apps/details?id=com.ilcs.phinnisismartphone"
   },
   {
     "id": 11,
     "title": "CrystalSea Indonesian",
-    "imgPath": "./assets/images/portofolio/porto1.jpg"
+    "imgPath": "./assets/images/portofolio/porto1.jpg",
+    "linkProject": "https://crystalsea.id/"
+  },
+  {
+    "id": 12,
+    "title": "CrystalSea Singapore",
+    "imgPath": "./assets/images/portofolio/porto1.jpg",
+    "linkProject": "https://crystalsea.sg/"
+  },
+  {
+    "id": 13,
+    "title": "Admin Control CrystalSea Indonesian and Singapore",
+    "imgPath": "./assets/images/portofolio/porto12.jpg",
+    "linkProject": "https://github.com/zens07/crystal-admin/"
+  },
+  {
+    "id": 14,
+    "title": "Octoclicks by CIMB Niaga",
+    "imgPath": "./assets/images/portofolio/porto13.jpg",
+    "linkProject": "https://www.octoclicks.co.id/login/"
+  },
+  {
+    "id": 15,
+    "title": "Admin Control CIMB Niaga for octoclicks",
+    "imgPath": "./assets/images/portofolio/porto14.jpg",
+    "linkProject": "https://github.com/zens0"
   }
 ]

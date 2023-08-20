@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         project.innerHTML = `
             <h3>${item.title}</h3>
             <img src="${item.imgPath}" alt="${item.title}" class="project-image">
-            <a href="#" class="btn-dark">View Project</a>
+            <a href="${item.linkProject}" class="btn-dark" style="text-align:center;" target="_blank">View Project</a>
           `;
         projectContainer.appendChild(project);
       });
