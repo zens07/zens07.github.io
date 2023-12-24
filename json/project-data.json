@@ -6,7 +6,7 @@
     "linkProject": "https://github.com/zens07/e-commerce"
   },
   {
-    "id": 2, 
+    "id": 2,
     "title": "Web Learning Networking Computer",
     "imgPath": "./assets/images/portofolio/porto10.jpg",
     "linkProject": "https://github.com/zens07/LearnTopologi"
@@ -87,6 +87,6 @@
     "id": 15,
     "title": "Admin Control CIMB Niaga for octoclicks",
     "imgPath": "./assets/images/portofolio/porto14.jpg",
-    "linkProject": "https://github.com/zens0"
+    "linkProject": ""
   }
 ]

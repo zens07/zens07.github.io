@@ -73,11 +73,11 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     margin-right: 0px;
   }
-  
+
   .navbar-toggle {
     display: flex;
   }
-  
+
   .navbar-menu.active {
     visibility: visible;
     opacity: 1;
@@ -119,10 +119,15 @@ h4 {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .btn-dark:hover {
   background-color: #555;
+}
+
+.btn-dark:disabled {
+  background-color: #888;
 }
 
 /* Main Container */
@@ -262,18 +267,18 @@ h4 {
 .project-container {
   display: flex;
   margin: 50px;
-  background-color: #FFF;
-  padding:20px;
+  background-color: #fff;
+  padding: 20px;
   flex-wrap: wrap;
   max-width: 100%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  justify-content: space-evenly ;
+  justify-content: space-evenly;
   row-gap: 20px;
 }
 
 .project {
   display: flex;
-  width:320px;
+  width: 320px;
   flex-direction: column;
   padding: 20px;
   background-color: #f5f5f5;
@@ -312,7 +317,7 @@ h4 {
 
 @media (max-width: 768px) {
   .project {
-    width:100%;
+    width: 100%;
   }
   .project a {
     visibility: visible;
@@ -360,7 +365,7 @@ h4 {
   top: 50%;
   left: 50%;
   opacity: 0;
-  transform: translate(-50%, -50%) scale(1); 
+  transform: translate(-50%, -50%) scale(1);
   transition: opacity 0.3s, transform 0.3s;
   border-radius: 5px;
   z-index: 1;
@@ -396,7 +401,7 @@ h4 {
   font-size: 16px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .certificate-container {
     padding: 10px;
   }
@@ -404,7 +409,7 @@ h4 {
     width: 100%;
   }
   .description:last-child::after {
-    content: 'Click card for see certificate';
+    content: "Click card for see certificate";
     color: #444;
     font-weight: bold;
     font-size: 10px;
@@ -526,7 +531,7 @@ h4 {
   top: -50%; /* Adjust the value to position the line correctly */
 }
 .timeline-item .timeline-connector:last-child {
-  top: 10%; 
+  top: 10%;
 }
 .timeline-item:last-child .timeline-connector:first-child {
   bottom: 90%;
@@ -542,7 +547,7 @@ h4 {
   color: #fff;
   text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  border-bottom:1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .contact-container h2 {

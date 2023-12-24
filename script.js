@@ -33,14 +33,19 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       // Iterate through the JSON data and create project containers
-      data.forEach((item) => {
+      data.reverse().forEach((item) => {
         const project = document.createElement("div");
         project.className = "project";
-        project.innerHTML = `
-            <h3>${item.title}</h3>
-            <img src="${item.imgPath}" alt="${item.title}" class="project-image">
-            <a href="${item.linkProject}" class="btn-dark" style="text-align:center;" target="_blank">View Project</a>
-          `;
+        if (item.linkProject) {
+          project.innerHTML = `
+                <h3>${item.title}</h3>
+                <img src="${item.imgPath}" alt="${item.title}" class="project-image" />
+                <a href="${item.linkProject}" class="btn-dark" style="text-align:center;" target="_blank">View Project</a>`;
+        } else {
+          project.innerHTML = `
+                <h3>${item.title}</h3>
+                <img src="${item.imgPath}" alt="${item.title}" class="project-image" />`;
+        }
         projectContainer.appendChild(project);
       });
     })
@@ -143,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         certificateImg.src = certificate.imagePaths.certificate;
         certificateImg.alt = certificate.certificateType;
         certificateImg.classList.add("certificate-document");
-        
+
         const logoImg = document.createElement("img");
         logoImg.src = certificate.imagePaths.logo;
         logoImg.alt = certificate.institution;
