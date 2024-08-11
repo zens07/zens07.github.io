@@ -1,11 +1,141 @@
-[
-  { "name": "HTML", "progress": 80 },
-  { "name": "CSS", "progress": 75 },
-  { "name": "Javascript", "progress": 75 },
-  { "name": "Node Js", "progress": 60 },
-  { "name": "React Js", "progress": 90 },
-  { "name": "Redux", "progress": 80 },
-  { "name": "React Native", "progress": 70 },
-  { "name": "PHP", "progress": 50 },
-  { "name": "Laravel", "progress": 50 }
-]
+{
+  "frontendDeveloperSkills": [
+    {
+      "category": "Core_Technologies",
+      "skills": [
+        {
+          "name": "HTML",
+          "description": "Fundamental markup language for creating the structure of web pages."
+        },
+        {
+          "name": "CSS",
+          "description": "Used for styling the visual presentation of web pages."
+        },
+        {
+          "name": "JavaScript",
+          "description": "Core programming language for adding interactivity and dynamic content to web pages."
+        }
+      ]
+    },
+    {
+      "category": "Frameworks_and_Libraries",
+      "skills": [
+        {
+          "name": "React.js",
+          "description": "Popular JavaScript library for building user interfaces, especially SPAs."
+        },
+        {
+          "name": "Next.js",
+          "description": "React-based framework for building server-rendered applications and static websites."
+        },
+        {
+          "name": "Vue.js",
+          "description": "Progressive JavaScript framework known for simplicity and flexibility."
+        }
+      ]
+    },
+    {
+      "category": "Version_Control",
+      "skills": [
+        {
+          "name": "Git",
+          "description": "Version control system for tracking code changes and collaboration."
+        },
+        {
+          "name": "Platforms",
+          "description": "Platforms for hosting and collaborating on Git repositories.",
+          "items": ["GitHub", "GitLab", "Bitbucket"]
+        }
+      ]
+    },
+    {
+      "category": "CSS_Preprocessors",
+      "skills": [
+        {
+          "name": "Sass",
+          "description": "CSS preprocessor allowing the use of variables, nested rules, and functions."
+        },
+        {
+          "name": "Less",
+          "description": "Another CSS preprocessor with different syntax and functionality."
+        }
+      ]
+    },
+    {
+      "category": "Build_and_Task_Runners",
+      "skills": [
+        {
+          "name": "Webpack",
+          "description": "Module bundler for managing and optimizing project assets."
+        },
+        {
+          "name": "Babel",
+          "description": "JavaScript compiler to convert modern JS to compatible versions."
+        }
+      ]
+    },
+    {
+      "category": "Responsive_Design",
+      "skills": [
+        {
+          "name": "Description",
+          "description": "Understanding of how to create designs that work well on various devices, with a focus on mobile-first design."
+        }
+      ]
+    },
+    {
+      "category": "Cross_Browser_Compatibility",
+      "skills": [
+        {
+          "name": "Description",
+          "description": "Ensuring consistent functionality across different web browsers."
+        }
+      ]
+    },
+    {
+      "category": "Performance_Optimization",
+      "skills": [
+        {
+          "name": "Description",
+          "description": "Techniques to improve web performance.",
+          "items": ["Lazy Loading", "Image Optimization", "Minifying CSS/JS"]
+        }
+      ]
+    },
+    {
+      "category": "Testing_And_Debugging",
+      "skills": [
+        {
+          "name": "Unit Testing",
+          "description": "Writing tests for individual components or functions."
+        },
+        {
+          "name": "End To End Testing",
+          "description": "Simulating user interactions to verify application behavior."
+        },
+        {
+          "name": "Debugging Tools",
+          "description": "Tools for debugging and optimizing code.",
+          "items": ["Chrome DevTools", "Firefox DevTools"]
+        }
+      ]
+    },
+    {
+      "category": "Soft_Skills",
+      "skills": [
+        {
+          "name": "Attention To Detail",
+          "description": "Ensuring visual design and user experience meet project requirements."
+        },
+        {
+          "name": "Communication",
+          "description": "Collaborating effectively with designers, backend developers, and stakeholders."
+        },
+        {
+          "name": "Problem Solving",
+          "description": "Troubleshooting and resolving development issues."
+        }
+      ]
+    }
+  ]
+}

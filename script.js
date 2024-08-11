@@ -54,42 +54,74 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const skillsContainer = document.querySelector(".skills-container");
+document.addEventListener("DOMContentLoaded", function () {
+  const skillsContainerFirst = document.querySelector(
+    ".skills-container-first"
+  );
+  const skillsContainerSecond = document.querySelector(
+    ".skills-container-second"
+  );
 
+  // Fetch the JSON file from the server
   fetch("/json/skills-data.json")
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok " + response.statusText);
+      }
+      return response.json();
+    })
     .then((skillsData) => {
-      const skillsList = document.createElement("ul");
-      skillsList.className = "skills-list";
+      const middleIndex = Math.ceil(
+        skillsData.frontendDeveloperSkills.length / 2
+      );
+      const firstHalf = skillsData.frontendDeveloperSkills.slice(
+        0,
+        middleIndex
+      );
+      const secondHalf = skillsData.frontendDeveloperSkills.slice(middleIndex);
 
-      skillsData.forEach((skill) => {
-        const skillItem = document.createElement("li");
-        const skillName = document.createElement("span");
-        skillName.className = "skill-name";
-        skillName.textContent = skill.name;
-
-        const skillProgress = document.createElement("div");
-        skillProgress.className = "skill-progress";
-
-        const progressBar = document.createElement("div");
-        progressBar.className = "skill-progress-bar";
-        progressBar.style.width = skill.progress + "%";
-
-        skillProgress.appendChild(progressBar);
-        skillItem.appendChild(skillName);
-        skillItem.appendChild(skillProgress);
-        skillsList.appendChild(skillItem);
-      });
-
-      const skillsHeader = document.createElement("h2");
-      skillsHeader.textContent = "Skills";
-      skillsContainer.appendChild(skillsHeader);
-      skillsContainer.appendChild(skillsList);
+      populateSkills(skillsContainerFirst, firstHalf);
+      populateSkills(skillsContainerSecond, secondHalf);
     })
     .catch((error) => {
-      console.error("Error fetching skills data:", error);
+      console.error(
+        "There has been a problem with your fetch operation:",
+        error
+      );
     });
+
+  function populateSkills(container, skills) {
+    let content = `<ul class="container-listskills">`; // Use <ul> for ordered list (numbered)
+
+    skills.forEach((skillCategory) => {
+      content += `<li><strong>${skillCategory.category.replaceAll(
+        "_",
+        " "
+      )}:</strong>`; // 50% width for each column
+      content += "<ul>";
+
+      skillCategory.skills.forEach((skill) => {
+        content += `<li><strong>${skill.name.replaceAll("_", " ")}:</strong> ${
+          skill.description
+        }`;
+
+        if (skill.items) {
+          content += "<ul>";
+          skill.items.forEach((item) => {
+            content += `<li>${item}</li>`;
+          });
+          content += "</ul>";
+        }
+
+        content += "</li>";
+      });
+
+      content += "</ul></li>";
+    });
+
+    content += "</ul>";
+    container.innerHTML += content; // Append the content to the container
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
